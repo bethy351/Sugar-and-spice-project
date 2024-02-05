@@ -25,8 +25,6 @@
 <body>
 
 <h1>Menu Items</h1>
-<h3><a href="">Cart (does not work)</a></h3>
-<h3><a href="">Back (does not work)</a></h3>
 <table>
     <thead>
         <tr>
@@ -44,11 +42,7 @@
                 <td>${foodItem.name}</td>
                 <td>${foodItem.description}</td>
                 <td>${foodItem.price}</td>
-
                 <td>
-                    <a>add(Customer)</a>
-                    <br>
-                    <a>remove(Admin)</a>
                     <!-- These links should point to the appropriate controller methods for edit and delete
                     <a href="${pageContext.request.contextPath}/foodItem/edit/${foodItem.id}">Edit</a> |
                     <a href="${pageContext.request.contextPath}/foodItem/delete/${foodItem.id}" onclick="return confirm('Are you sure?')">Delete</a> -->
