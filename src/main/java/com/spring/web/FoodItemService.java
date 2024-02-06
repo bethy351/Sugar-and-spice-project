@@ -20,4 +20,10 @@ public class FoodItemService {
         // This uses the method from the FoodItemRepository
         return foodItemRepository.findMenuItemsByRestaurantId(restaurantId);
     }
+
+	public List<FoodItem> findFoodItemById(Integer foodItemId) {
+		// TODO Auto-generated method stub
+		return foodItemRepository.findFoodItemById(foodItemId);
+	}
+
 }

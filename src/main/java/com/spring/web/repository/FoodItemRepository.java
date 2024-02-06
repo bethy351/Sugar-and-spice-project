@@ -8,4 +8,5 @@ import com.spring.web.entity.FoodItem;
 public interface FoodItemRepository extends JpaRepository<FoodItem, Long> {
 
     List<FoodItem> findMenuItemsByRestaurantId(Integer restaurantId);
+    List<FoodItem> findFoodItemById(Integer foodItemId);
 }
