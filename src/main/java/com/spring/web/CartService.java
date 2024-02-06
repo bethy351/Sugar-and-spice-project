@@ -4,8 +4,6 @@ import com.spring.web.entity.Cart;
 import com.spring.web.entity.FoodItem;
 import com.spring.web.entity.User;
 import com.spring.web.repository.CartRepository;
-import com.spring.web.repository.UserRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -37,7 +35,6 @@ public class CartService {
     public Cart addOrUpdateItem(User user, List<FoodItem> foodItem, Integer quantity) {
         return addOrUpdateItem(user, foodItem, quantity);
     }
-	
 	
 
 	// Method to get cart items for a given user

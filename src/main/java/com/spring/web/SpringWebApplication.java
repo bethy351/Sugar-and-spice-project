@@ -1,22 +1,14 @@
 package com.spring.web;
 
-import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-//import org.springframework.context.annotation.Bean;
-
-//import com.spring.web.entity.FoodItem;
-//import com.spring.web.entity.Restaurant;
-import com.spring.web.repository.FoodItemRepository;
 
 @SpringBootApplication
 public class SpringWebApplication extends SpringBootServletInitializer {
 
-    @Autowired
-    private FoodItemRepository repo;
+    
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
